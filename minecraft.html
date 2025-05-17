@@ -1,15 +1,41 @@
-<!-- minecraft.html -->
 <!DOCTYPE html>
 <html lang="ru">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Майнкрафт</title>
-  <link rel="stylesheet" href="style.css" />
   <style>
-    /* Parallax Section */
+    /* Общие стили */
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #121212;
+      color: #ffffff;
+    }
+
+    /* Навигация */
+    header {
+      background-color: #1e1e1e;
+      padding: 1rem 2rem;
+      text-align: center;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+    }
+
+    nav a {
+      color: #03dac6;
+      margin: 0 1rem;
+      text-decoration: none;
+      font-weight: bold;
+      transition: color 0.3s ease;
+    }
+
+    nav a:hover {
+      color: #00e676;
+    }
+
+    /* Параллакс секция */
     .parallax {
-      background-image: url('https://www.gamespot.com/a/uploads/original/1603/16030002/4349781-minecraft-1-18-dripstone-caves.jpg');
+      background-image: url('https://www.gamespot.com/a/uploads/original/1603/16030002/4349781-minecraft-1-18-dripstone-caves.jpg ');
       height: 600px;
       background-attachment: fixed;
       background-position: center;
@@ -19,7 +45,6 @@
       align-items: center;
       justify-content: center;
       text-align: center;
-      color: white;
       position: relative;
     }
 
@@ -40,16 +65,98 @@
       background-color: rgba(0, 0, 0, 0.4);
     }
 
-    .parallax h2 {
-      font-size: 2.5rem;
+    .parallax h1 {
+      font-size: 3rem;
       margin-bottom: 1rem;
     }
 
     .parallax p {
       font-size: 1.2rem;
     }
+
+    /* Основной контент */
+    main {
+      max-width: 800px;
+      margin: 2rem auto;
+      padding: 0 1rem;
+    }
+
+    h2 {
+      color: #bb86fc;
+      margin-top: 2rem;
+    }
+
+    p {
+      line-height: 1.6;
+    }
+
+    ul {
+      list-style-type: square;
+      padding-left: 1.5rem;
+    }
+
+    img {
+      max-width: 100%;
+      border-radius: 8px;
+      border: 2px solid #333;
+      margin-top: 1rem;
+    }
+
+    button {
+      background-color: #03dac6;
+      color: black;
+      border: none;
+      padding: 0.75rem 1.5rem;
+      margin-top: 1.5rem;
+      cursor: pointer;
+      border-radius: 4px;
+      font-weight: bold;
+      transition: background-color 0.3s ease;
+    }
+
+    button:hover {
+      background-color: #00e676;
+    }
   </style>
 </head>
 <body>
+
+  <!-- Шапка сайта -->
   <header>
     <h1>Майнкрафт</h1>
+    <p>Моя любовь к игре Minecraft</p>
+    <nav>
+      <a href="index.html">Обо мне</a>
+      <a href="minecraft.html">Майнкрафт</a>
+      <a href="football.html">Футбол</a>
+    </nav>
+  </header>
+
+  <!-- Параллакс секция -->
+  <section class="parallax">
+    <div class="parallax-content">
+      <h1>Мир, который я создаю сам</h1>
+      <p>Minecraft — это не просто игра. Это целая вселенная возможностей!</p>
+    </div>
+  </section>
+
+  <!-- Основной контент -->
+  <main>
+    <h2>Почему я люблю Майнкрафт?</h2>
+    <p>Minecraft — это одна из моих любимых игр, потому что она даёт полную свободу творчеству. Здесь я могу строить дома, замки, деревни и даже целые города! В режиме выживания я учусь быть внимательным, добывать ресурсы, бороться с мобами и исследовать подземные пещеры.</p>
+
+    <img src="https://www.minecraft.net/image/upload/f_auto/q_auto/v1707562007/mc-www/2024/Minecraft_Logo_PNG?itok=JZ9VPjNq " alt="Minecraft Logo" />
+
+    <h2>Что мне нравится в игре:</h2>
+    <ul>
+      <li><strong>Свобода действий:</strong> Я могу создать всё, что угодно — от маленького домика до огромного города.</li>
+      <li><strong>Режим выживания:</strong> Интересно собирать ресурсы, делать инструменты и бороться с врагами.</li>
+      <li><strong>Креативность:</strong> Игра помогает мне развивать воображение и фантазию.</li>
+      <li><strong>Моды и сервера:</strong> Можно играть с друзьями или добавлять новые функции через модификации.</li>
+    </ul>
+
+    <button onclick="window.location.href='index.html'">Назад к главной</button>
+  </main>
+
+</body>
+</html>
